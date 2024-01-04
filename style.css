@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:#018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+    font-family:'helvetica neue';
+}
+.clock{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content:center; 
+}
+.clock-face{
+    height:20rem;
+    width:20rem;
+    border-radius:100%;
+    background-color: aqua;
+    border: solid 2rem white;
+    position: relative;
+  
+}
+.hand{
+ height:0.6rem;
+ width:8.8rem;
+ background-color: black;
+ position:absolute;
+ bottom: 50%;
+ right:50%;
+ left:50%;
+ transform-origin: left;
+ transform: rotate(-90deg);
+ transition:all 2sec;
+ transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.sec-hand{
+  height:0.2rem;  
+}
+.min-hand{
+    width:7.2rem;
+    height:0.4rem;
+    background-color: brown;
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
+.hr-hand{
+    background-color: gold;
+    width: 4.9rem;
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
